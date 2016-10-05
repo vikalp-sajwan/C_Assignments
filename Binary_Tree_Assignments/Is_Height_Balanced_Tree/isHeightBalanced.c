@@ -199,16 +199,16 @@ int main(){
 //		   /  \
 //		 1	   6			NOT HEIGHT BALANCED
 //	   		  / \
-//	 		 5	 7
+//	 		 4	 7
 //			/ \
-//		   3   4	
+//		   3   5	
 	insertNode(&root3, 2);
 	insertNode(&root3, 1);
 	insertNode(&root3, 6);
 	insertNode(&root3, 7);
-	insertNode(&root3, 5);
-	insertNode(&root3, 3);
 	insertNode(&root3, 4);
+	insertNode(&root3, 3);
+	insertNode(&root3, 5);
 	printInOrder(root3);
 	if(isHeightBalanced(root3)!=INT_MAX)
 		printf("\ntree is height balanced\n");
